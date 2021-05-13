@@ -78,7 +78,7 @@ while key != ESC:
         score += 1
         food = ()
         while food == ():
-            food = ( randint( 1,34 ), randint(1 , 84) )
+            food = ( randint( 1,32 ), randint(1 , 82) )
             if food in snake:
                 food = ()
         win.addch( food[0], food[1], "*" )
