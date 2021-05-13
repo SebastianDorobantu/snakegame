@@ -1,3 +1,7 @@
+# +-----------------------------------------+
+# | SNAKE GAME PY ---by-Sebastian-Dorobantu |
+# +-----------------------------------------+
+
 import curses
 from random import randint
 
