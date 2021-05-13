@@ -24,6 +24,7 @@ score = 0 # initial score
 ESC = 27
 key = curses.KEY_RIGHT
 
+keys=[curses.KEY_LEFT, curses.KEY_UP,curses.KEY_RIGHT,  curses.KEY_DOWN]
 
 
 #Game Logic ################
@@ -39,9 +40,11 @@ while key != ESC:
     key = event if event != -1 else prev_key
 
     #check key is one of the arrows
-    if key not in [curses.KEY_LEFT, curses.KEY_RIGHT, curses.KEY_UP, curses.KEY_DOWN]:
+    if key not in keys:
         key = prev_key
 
+    if key == keys[keys.index(prev_key)-2]:
+        key = prev_key
 
 
 
